@@ -11,6 +11,7 @@ Install some node modules
     npm install express
     npm install jade
     npm install cradle
+    npm install -g coffee-script
 
 Install couchdb by following instructions.
 
