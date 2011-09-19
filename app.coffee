@@ -42,6 +42,14 @@ app.get '/job/new', (req, res) ->
         title: 'New job'
     }
 
+app.post '/job/new', (req, res) ->
+    db.save {
+        type: 'job',
+        name: req.param('name'),
+        description: req.param('description')
+    }, (error, docs) ->
+        res.redirect '/jobs'
+
 app.get '/job/:id', (req, res) ->
     db.get req.params.id, (error, job) ->
         db.view 'tasks/by_job', {key: req.params.id}, (error, result) ->
