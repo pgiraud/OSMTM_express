@@ -6,7 +6,7 @@ Installation
 
 Install node.
 
-Install some node modules::
+Install some node modules
 
     npm install express
     npm install jade
@@ -14,17 +14,17 @@ Install some node modules::
 
 Install couchdb by following instructions.
 
-Create the database and some data::
+Create the database and some data
     
     node setup.js
 
 The above may need to be launch several times.
 
-Launch application::
+Launch application
     
     node app.js
 
-Or::
+Or
 
     npm install -g supervisor
     supervisor -p app.js
