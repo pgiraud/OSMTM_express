@@ -1,0 +1,9 @@
+h1= title
+p Job's Name: 
+  b #{job.name}
+p Job's Description: 
+    #{job.description}
+
+div.tasks
+- each task in tasks
+  div.task= task.name

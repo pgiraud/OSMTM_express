@@ -1,0 +1,16 @@
+h1 Creating a new job
+
+form( method= 'post' )
+  div
+    div.clearfix
+      label( for= 'editJobName') Name
+      div.input
+        input(type='text', name= 'name', id= 'editJobName' )
+    div.clearfix
+      label( for= 'editJobDescription') Description
+      div.input
+        textarea( name= 'description', id= 'editJobDescription' )
+        span.help-block Give your job a short description
+    div#editJobSubmit
+      input( type= 'submit', value= 'Send' ).btn
+

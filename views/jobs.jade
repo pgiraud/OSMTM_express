@@ -1,0 +1,10 @@
+h1= title
+div.container
+  p Welcome to #{title}
+  - each job in jobs
+    div.job
+      - var link = 'job/' + job._id
+      a(href=link)= job.name
+  br  
+  - var link = 'job/new'
+  a(href=link) + Create a new job
