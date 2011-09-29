@@ -23,10 +23,10 @@ The above may need to be launch several times.
 
 Launch application
     
-    node app.js
+    coffee app.coffee
 
 Or
 
     npm install -g supervisor
-    supervisor -p app.js
+    supervisor -p app.coffee
 
